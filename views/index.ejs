@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR</title>
+</head>
+<body>
+        <form action="extractTextFromImage" method="post" enctype="multipart/form-data">
+            <label for="file"><b>Upload Image File:</b></label>
+            <input type="file" name="file" id="" accept="image/*" required>
+            
+            <button>Get Text</button>
+        </form>
+        <br/>
+        <textarea  cols="30" rows="10">
+            <%=data%>
+        </textarea>
+
+</body>
+</html>
